@@ -1,0 +1,8 @@
+<div class="list-group">
+    <a href="" class="list-group-item" ng-class="{active: selectedProgram === pgm}" ng-repeat="pgm in programs | filter:searchField" ng-click="showprogram(pgm)">
+        {{pgm.Name}}
+    </a>
+    <div class="button-bottom">
+	    <input class="form-control" type="text" ng-model="searchField" placeholder="Search">
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+}
+
+.thumbnail img.pull-right {
+  width: 50px;
+}
+
+.button-bottom-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.button-bottom-right-modal {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+.button-bottom {
+	position: absolute;
+	bottom: 60px;
+}
+
+.tabs {
+	background-color: #CCCCCC;
+}
+
+.tabs a {
+	color: black;
+}
+
+.tabs a:active {
+	color: black;
+}

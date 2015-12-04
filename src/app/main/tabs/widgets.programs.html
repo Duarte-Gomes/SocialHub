@@ -1,0 +1,6 @@
+<div  ng-repeat="widget in programWidgetList" style="margin-bottom:15px">
+		<button type="button" class="btn btn-lg btn-info btn-block"  ng-class="{active: programWidgetSelected === widget}" data-animation="am-fade" data-content-template="components/modalWidget.html" bs-modal="" ng-click="showProgramWidget(widget)">{{widget.Name}}</button>
+</div>
+
+<!--<div class="row" style="padding-left:30px; padding-bottom:15px">-->
+	

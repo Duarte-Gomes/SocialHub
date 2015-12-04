@@ -1,0 +1,36 @@
+<form class="form-horizontal">
+	<h4>Graphic Widget</h4>
+	<div class="form-group">
+	    <label class="control-label col-sm-1">Name:</label>
+	    <div class="col-sm-5">
+	    	<input type="text" class="form-control" ng-model="programWidgetSelected.Name" placeholder="">
+		</div>    
+	    <label class="control-label col-sm-1">Type:</label>
+		<div class="btn-group col-sm-5">
+			<button type="button" class="btn btn-default" ng-model="programWidgetSelected.IdWidget" ng-options="type.IdWidget as type.Name for type in graphicWidget" bs-select>
+				<span class="caret"></span>
+			</button>
+		</div>
+	</div>
+</form>
+
+<form>		
+	<h4>Widget Settings</h4>
+	<div class="form-group">
+		<div ng-repeat="Setting in programWidgetSettings">
+			<label class="control-label">{{Setting.Name}}:</label>
+			<input type="text" class="form-control" ng-model="Setting.Value" placeholder="">
+		    
+		</div>
+	</div>
+
+
+
+	<br>
+	<br>
+	<div class="button-bottom-right-modal">
+		<button class="btn btn-default" type="submit" ng-click="saveProgramWidget(programWidgetSelected, programWidgetSettings)" style="position: relative">Save</button>
+		<button class="btn btn-default" type="submit" ng-click="deleteProgramWidget(programWidgetSelected)" style="position: relative">Delete</button>
+		<button class="btn btn-default" type="submit" ng-click="$hide()" style="position: relative">Cancel</button>
+	</div>
+</form>

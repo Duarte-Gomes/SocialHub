@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-sm-3" >
+        <h4>Programas</h4>
+        <div style="border-style: solid; border-width: 1px; border-radius: 4px; border-color: #CCCCCC; background-color: #E6E6E6; height: 595px; padding: 10px">
+            <div ng-include="'app/main/tabs/list.programs.html'"></div>
+        </div>
+        <button style="margin-top: 15px" type="button" class="btn btn-success" ng-click="newprogram()">Novo Programa</button>
+    </div>
+    <div class="col-sm-6">
+        <h4>Detalhes</h4>
+        <div style="border-style: solid; border-width: 1px; border-radius: 4px; border-color: #CCCCCC; background-color: #E6E6E6; height: 595px; padding: 10px">
+            <div ng-include="'app/main/tabs/details.programs.html'"></div>
+        </div>
+        <button style="margin-top: 15px"type="button" class="btn btn-default btn-success" ng-click="saveprogram(selectedProgram)">Gravar</button>
+        <button style="margin-top: 15px"type="button" class="btn btn-default btn-warning" ng-click="cancelprogram(selectedProgram)">Cancelar</button>
+        <button style="margin-top: 15px"type="button" class="btn btn-default btn-danger" ng-click="deleteprogram(selectedProgram)">Apagar</button>
+    </div>
+    <div class="col-sm-3">
+        <h4>Widgets</h4>
+        <div style="border-style: solid; border-width: 1px; border-radius: 4px; border-color: #CCCCCC; background-color: #E6E6E6; height: 595px; padding: 10px">
+            <div ng-include="'app/main/tabs/widgets.programs.html'"></div>
+        </div>
+        <button style="margin-top: 15px" class="btn btn-success" data-animation="am-fade" data-content-template="components/modalNewWidget.html" ng-click="newProgramWidget(selectedProgram.IdProgram)" bs-modal="">Novo Widget</button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<h4>{{selectedProgram.Name}}</h4>
+<table class="table">
+    <thead>
+      	<tr>
+	        <th>Nome Setting</th>
+	        <th>Value</th>
+	        <th>boyo</th>
+    </thead>
+    <tbody ng-repeat="setting in programConfigurationList">
+      	<tr>
+	        <td>{{setting.Name}}</td>
+	        <td>{{setting.Value}}</td>
+	        <td><button class="btn btn-default btn-xs" data-animation="am-fade" data-content-template="components/modalSetting.html" bs-modal=""type="submit" ng-click="showsetting(setting)">Edit</button></td>
+      	</tr>
+    </tbody>
+</table>

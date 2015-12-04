@@ -1,0 +1,21 @@
+<form class="form-horizontal">
+	<h4>Graphic Widget</h4>
+	<div class="form-group">
+	    <label class="control-label col-sm-1">Name:</label>
+	    <div class="col-sm-5">
+	    	<input type="text" class="form-control" ng-model="newProgramWidgetDetail.Name" placeholder="">
+	    </div>	
+	    <label class="control-label col-sm-1">Type:</label>
+		<div class="btn-group col-sm-5">
+			<button type="button" class="btn btn-default" ng-model="newProgramWidgetDetail.IdWidget" ng-options="type.IdWidget as type.Name for type in graphicWidget" bs-select>
+				<span class="caret"></span>
+			</button>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="button-bottom-right-modal">
+		<button class="btn btn-default" type="submit" style="position: relative" ng-click="saveProgramWidget(newProgramWidgetDetail)">Save</button>
+		<button class="btn btn-default" type="submit" style="position: relative" ng-click="$hide()">Cancel</button>
+	</div>
+</form>

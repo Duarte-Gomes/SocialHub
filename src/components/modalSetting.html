@@ -1,0 +1,10 @@
+<div class="form-group">
+	<p>{{setting.Name}}</p>
+    <label class="control-label">Value:</label>
+    <input type="text" ng-model="settingDetail.Value" placeholder="">
+</div>
+<br>
+<div class="button-bottom-right-modal">
+	<button class="btn btn-default" type="submit" ng-click="savesetting(settingDetail)" style="position: relative">Save</button>
+	<button class="btn btn-default" type="submit" ng-click="$hide()" style="position: relative">Cancel</button>
+</div>
